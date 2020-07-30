@@ -1,9 +1,66 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <title>Pure CSS Ticker</title>
-  </head>
-  <body>
-    <p>Coming Very very soon.</p>
-  </body>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css.css"> -->
+    <style type="text/css">
+        @keyframes ticker-kf {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            /*
+            How to calculate the first negative integer value:
+            For each image below, you need add -9. If there are 12 image tags, 12 * -9 = -108rem
+            */
+            100% {
+                transform: translate3d(-108rem, 0, 0);
+            }
+        }
+
+        .img-ticker {
+            animation: ticker-kf 36s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Wrap the slider in div with overflow hidden to hide scrollbars -->
+    <div class="overflow-hidden">
+        <!-- The slider itself is a flex grid -->
+        <div class="flex -mx-4 img-ticker">
+            <!-- Original set of images -->
+            How to Calculate the css values
+            <!-- Each image is a grid column with width 8rem (w-32) and horiztonal margin 1rem (mx-4) -->
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=1">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=2">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=3">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=4">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=5">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=6">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=7">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=8">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=9">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=10">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=11">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=12">
+            <!-- Copy set of images from above -->
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=1">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=2">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=3">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=4">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=5">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=6">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=7">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=8">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=9">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=10">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=11">
+            <img class="w-32 mx-4 self-start flex-none" src="https://via.placeholder.com/150x150/f4ccccff/434343?text=12">
+
+        </div>
+    </div>
+</body>
+
 </html>
